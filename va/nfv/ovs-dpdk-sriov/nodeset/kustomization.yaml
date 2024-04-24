@@ -18,11 +18,11 @@ transformers:
       create: true
 
 components:
-  - ../../../../lib/dataplane
+  - ../../../../lib/dataplane/nodeset
 
 resources:
   - baremetalset-password-secret.yaml
-  - nova_sriov.yaml
+  - nova_ovs_dpdk_sriov.yaml
 
 replacements:
   - source:
@@ -46,7 +46,7 @@ replacements:
     targets:
       - select:
           kind: ConfigMap
-          name: cpu-pinning-nova
+          name: ovs-dpdk-sriov-cpu-pinning-nova
         fieldPaths:
           - data.25-cpu-pinning-nova\.conf
         options:

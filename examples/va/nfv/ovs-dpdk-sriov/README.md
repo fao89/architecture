@@ -20,7 +20,7 @@ This is a collection of CR templates that represent a validated Red Hat OpenStac
 
 3. In stages 1 and 2 [kustomize](https://kustomize.io/) is used to generate the CRs dynamically. The `*-values.yaml` file(s) must be updated to fit your environment. kustomize version 5 or newer required.
 
-4.In stage 3 [kustomize](https://kustomize.io/) is used to generate the dataplane CRs dynamically. The edpm/values.yaml file must be updated to fit your environment. kustomize version 5 or newer required.
+4.In stage 3 [kustomize](https://kustomize.io/) is used to generate the dataplane CRs dynamically. The nodeset/values.yaml file must be updated to fit your environment. kustomize version 5 or newer required.
 
 ## Stages
 
